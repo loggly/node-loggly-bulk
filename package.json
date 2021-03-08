@@ -20,14 +20,13 @@
   },
   "devDependencies": {
     "eslint": "^7.21.0",
-    "nock": "~7.2.2",
+    "nock": "^13.0.11",
     "vows": "0.8.3"
   },
   "main": "./lib/loggly",
   "scripts": {
     "lint": "eslint --max-warnings 0 --ext lib/**/*.js lib/*.js --fix",
     "test": "vows test/*-test.js --spec",
-    "pretest-as-mock": "common lib/**/*.js lib/*.js test-as-mock/helpers.js",
     "test-as-mock": "vows test-as-mock/*-test.js --spec"
   },
   "license": "MIT",
