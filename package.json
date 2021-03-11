@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^7.21.0",
-    "nock": "^13.0.11",
+    "nock": "~7.2.2",
     "vows": "0.8.3"
   },
   "main": "./lib/loggly",
