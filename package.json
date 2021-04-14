@@ -14,7 +14,7 @@
     "loggly"
   ],
   "dependencies": {
-    "request": ">=2.76.0 <3.0.0",
+    "request": ">=2.83.0 <3.0.0",
     "moment": "^2.18.1",
     "json-stringify-safe": "5.0.x"
   },
