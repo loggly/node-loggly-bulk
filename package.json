@@ -2,6 +2,7 @@
   "name": "node-loggly-bulk",
   "description": "A client implementation for Loggly cloud Logging-as-a-Service API",
   "version": "3.0.1",
+  "type": "module",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
@@ -14,9 +15,9 @@
     "loggly"
   ],
   "dependencies": {
-    "request": ">=2.88.2 <3.0.0",
+    "json-stringify-safe": "5.0.x",
     "moment": "^2.18.1",
-    "json-stringify-safe": "5.0.x"
+    "node-fetch": "^2.6.6"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
