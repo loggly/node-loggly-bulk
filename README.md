@@ -30,7 +30,7 @@ Before we can do anything with Loggly, we have to create a client with valid cre
 There are two ways to send log information to Loggly via node-loggly-bulk. The first is to simply call client.log with an appropriate input token:
 
 ``` js
-  client.log('127.0.0.1 - Theres no place like home', function (err, result) {
+  client.log('127.0.0.1 - There\'s no place like home', function (err, result) {
     // Do something once you've logged
   });
 ```
@@ -38,7 +38,7 @@ There are two ways to send log information to Loggly via node-loggly-bulk. The f
 Note that the callback in the above example is optional, if you prefer the 'fire and forget' method of logging:
 
 ``` js
-  client.log('127.0.0.1 - Theres no place like home');
+  client.log('127.0.0.1 - There\'s no place like home');
 ```
 
 ### Logging with Tags
@@ -46,7 +46,7 @@ Note that the callback in the above example is optional, if you prefer the 'fire
 If you're using Loggly's [tags](https://www.loggly.com/docs/tags/) functionality, simply include an array of tags as the second argument to the `log` method:
 
 ``` js
-  client.log('127.0.0.1 - Theres no place like home', [ 'dorothy' ], function (err, result) {
+  client.log('127.0.0.1 - There\'s no place like home', [ 'dorothy' ], function (err, result) {
     // Do something once you've logged
   });
 ```
