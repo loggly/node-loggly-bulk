@@ -7,6 +7,7 @@ const origSetTimeout = global.setTimeout;
 
 describe('when trying to send logs', () => {
   beforeAll(() => {
+    jest.useFakeTimers();
     global.setTimeout = (cb, ms) => cb(); // ignore ms
   });
 
@@ -37,6 +38,7 @@ describe('when trying to send logs', () => {
       expect(err).toEqual(null);
       done();
     });
+    jest.runAllTimers();
   });
 
   it('should work with a non-json message', (done) => {
