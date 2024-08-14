@@ -17,7 +17,6 @@ describe('when trying to send logs', () => {
 
   afterAll(() => {
     global.setTimeout = origSetTimeout;
-    jest.runAllTimers();
   });
 
   it('should set correct token, URL, tags, headers and response', (done) => {
@@ -39,6 +38,7 @@ describe('when trying to send logs', () => {
       expect(err).toEqual(null);
       done();
     });
+    jest.runAllTimers();
   });
 
   it('should work with a non-json message', (done) => {
